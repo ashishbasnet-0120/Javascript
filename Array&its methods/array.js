@@ -1,4 +1,4 @@
-/* creating an similar type of array
+// creating an similar type of array
 let marks=[2,4,5,78,990];
 console.log(marks);
 
@@ -44,7 +44,7 @@ pro.unshift("Handsome");
 console.log(pro);
 
 pro.shift();// removing first element from array
-console.log(pro);*/
+console.log(pro);
 
 // Array methods index of 
 let rap=["ashish","basnet","chettri"];
@@ -103,3 +103,42 @@ console.log(papa.sort());
 
 let Num=[100,20,8,64];
 console.log(Num.sort());
+
+                        // splice method most imp
+
+
+
+let mama=["Ashish","basnet","chetrri","januaray","feburary"];
+mama.splice(0,3 ,"Hari","Basnet");
+console.log(mama);
+
+
+
+                    //Array refrences
+let a=[1,2,3,45,0];
+let bob = a;
+a.pop();
+console.log(a);
+console.log(bob);
+
+
+
+
+                // constant array
+const arr=[1,2,3,4,5];
+arr.pop();
+console.log(arr);
+arr.push(6);
+console.log(arr);
+
+/*arr=[3,2,4,5,6,7,78,8,9,9,9,9];
+console.log(arr); this is not possible*/
+
+
+                    // NEsted array
+let num1=[[1,2],[3,7],[3,4,5,6]];
+console.log(num1);
+console.log(num1.length);
+console.log(num1[0]);
+
+console.log(num1[2][3]);
