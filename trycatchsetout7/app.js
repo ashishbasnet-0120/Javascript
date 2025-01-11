@@ -83,12 +83,16 @@ clearInterval(id);//  setinterval will continue until this is used in console wi
 const raja={
     name:"Ashish",
     prop:this,
-    in1:function(){setTimeout(()=>{
+    in1:function(){
+        setTimeout(()=>{
         console.log(this);
-    },300)},
-    in2:function(){setTimeout(function(){
+    },300)
+},
+    in2:function(){
+        setTimeout(function(){
         console.log(this);
-    },300)},
+    },300)
+},
 }
-raja.in1();
-raja.in2();
+raja.in1();//ame: 'Ashish', prop: Window, in1: ƒ, in2: ƒ}
+raja.in2();//window: Window, self: Window, document: document, name: '', location: Location, …}
